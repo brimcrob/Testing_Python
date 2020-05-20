@@ -8,7 +8,7 @@ def printMatchingLine(filehandle, keyword,color):
 
         print(('[{}]: {}'.format(timestamp, line)))
 
-
+#todo create a file what this can search on
 if __name__ == '__main__':
     firstfile = open('file://D:/Pycharm Projects/Testing_Python/coordinates.csv', 'rt')
 
