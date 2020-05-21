@@ -1,16 +1,18 @@
 from datetime import datetime
+from termcolor import colored
 
-def printMatchingLine(filehandle, keyword,color):
+def printMatchingLine(filehandle, keyword, color):
     line = filehandle.readline()
     if keyword in line:
         now = datetime.now()
         timestamp = now.strftime('%Y%m%d-%H%M%S.%f')
 
-        print(('[{}]: {}'.format(timestamp, line)))
+        output = '[{}]: {}'.format(timestamp, line)
+        print(colored(output,color))
 
-#todo create a file what this can search on
+
 if __name__ == '__main__':
-    firstfile = open('file://D:/Pycharm Projects/Testing_Python/coordinates.csv', 'rt')
+    firstfile = open('D:/Pycharm Projects/Testing_Python/datalog', 'rt')
 
     while True:
-        printMatchingLine(firstfile,'58.', 'blue' )
+        printMatchingLine(firstfile,'Incoming', 'blue' )
