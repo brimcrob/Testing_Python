@@ -8,7 +8,7 @@ longitude = 18
 
 #creates the file and how I am writing to that file
 fh = open('coordinates.csv','wt')
-fh.write('type, latitude, longitude\n')
+fh.write('type,py latitude, longitude\n')
 
 #creates the data multipe times
 for i in range(10):
